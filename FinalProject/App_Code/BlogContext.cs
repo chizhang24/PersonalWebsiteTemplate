@@ -28,5 +28,6 @@ namespace FinalProject
         public string Content { get; set; }
         public int UserId { get; set; }
         public virtual User User { get; set; }
+        public string PageIdentifier { get; set; }
     }
 }
