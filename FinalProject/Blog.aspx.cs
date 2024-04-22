@@ -62,42 +62,5 @@ namespace FinalProject
         }
 
 
-
-
-
-        protected void btnPostComment_Click(object sender, EventArgs e)
-        {
-            if (Session["UserID"] != null)
-            {
-                using (var db = new BlogContext())
-                {
-                    var comment = new Comment
-                    {
-                        Content = txtComment.Text.Trim(),
-                        UserId = (int)Session["UserID"]
-                    };
-                    db.Comments.Add(comment);
-                    db.SaveChanges();
-                    LoadComments();
-                }
-            }
-            else
-            {
-                Response.Redirect("login.aspx");
-            }
-        }
-
-        private void LoadComments()
-        {
-            using (var db = new BlogContext())
-            {
-                var comments = db.Comments.Include("User").Select(c => new { c.Content, Username = c.User.Username }).ToList();
-                gvComments.DataSource = comments;
-                gvComments.DataBind();
-            }
-        }
-
-
-
     }
 }
