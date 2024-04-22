@@ -1,4 +1,17 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FinalProject.SiteMaster" %>
+
+<%-- Site.Master
+
+Created by: Chi Zhang
+Date Created: 4/15/2024
+Last Modified by: Chi Zhang
+Date Last Modified: 4/17/2024
+Part of: A590 WEB Final Project
+    --%>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
