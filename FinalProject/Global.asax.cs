@@ -25,5 +25,10 @@ namespace FinalProject
                 context.Database.Initialize(force: true);
             }
         }
+
+        //protected void Session_End(object sender, EventArgs e)
+        //{
+        //    //Session.Clear();
+        //}
     }
 }

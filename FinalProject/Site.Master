@@ -17,22 +17,34 @@ Part of: A590 WEB Final Project
 <head runat="server">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
     <title>Personal Website</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
 </head>
 <body>
     <form runat="server">
         <div class="navbar">
             <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx" Text="Home" />
             <asp:HyperLink runat="server" NavigateUrl="~/CV.aspx" Text="CV" />
-            <asp:HyperLink runat="server" NavigateUrl="~/Teaching.aspx" Text="Teaching" />
+            
             <asp:HyperLink runat="server" NavigateUrl="~/Publications.aspx" Text="Publications" />
             <asp:HyperLink runat="server" NavigateUrl="~/Blog.aspx" Text="Research Blog" />
              <asp:HyperLink runat="server" NavigateUrl="~/login.aspx" Text="Login/Register" />
+            <div>
+                <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" CssClass="link-button" />
 
-            <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="RedirectToLoginPage" LogoutPageUrl="~/login.aspx" LogoutText="Logout" Font-Overline="False" LoginText="Logout" />
+            </div>
+
+            <div>
+                Logged in as :<asp:Literal ID="ltUserName" runat="server" />
+            
+            </div>
 
         </div>
         <section>
