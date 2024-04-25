@@ -20,6 +20,18 @@ namespace FinalProject
             }
         }
 
+
+        private string ExtractTitle(string filePath)
+        {
+            HtmlDocument doc = new HtmlDocument();
+            doc.Load(filePath);
+            var titleNode = doc.DocumentNode.SelectSingleNode("//h1");
+            return titleNode != null ? titleNode.InnerText : "No title available";
+        }
+
+
+
+
         private string[] ExtractPreview(string filePath)
         {
             HtmlDocument doc = new HtmlDocument();
@@ -43,12 +55,13 @@ namespace FinalProject
                 string filePath = Path.Combine(basePath, file);
                 if (File.Exists(filePath))
                 {
+                    string title = ExtractTitle(filePath);
                     string[] contentLines = ExtractPreview(filePath);
                     string previewContent = string.Join("<br>", contentLines);
 
 
-                    LiteralControl link = new LiteralControl($"<h2><a href='/BlogContent/{file}'>{Path.GetFileNameWithoutExtension(file)}</a></h2>");
-                    LiteralControl preview = new LiteralControl($"<p>{previewContent}...<a href='/BlogContent/{file}'>Read more</a></p>");
+                    LiteralControl link = new LiteralControl($"<h2 style='font-size:24px; margin-bottem:10px;'><a href='/BlogContent/{file}' class='article-link'>{title}</a></h2>");
+                    LiteralControl preview = new LiteralControl($"<p class='preview-paragraph'>{previewContent}...<a href='/BlogContent/{file}' class='read-more-link'>Read more</a></p>");
 
                     if (cph != null)
                     {

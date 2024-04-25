@@ -102,6 +102,8 @@ footer {
 }
 
 
+
+/*Home page*/
 .main-content{
     overflow:auto;
 }
@@ -203,6 +205,33 @@ footer {
 
 
 
+
+/*Blog page*/
+
+.article-link, .read-more-link {
+    color: #007BFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    text-decoration: none;
+}
+
+.article-link:hover, .read-more-link:hover{
+    text-decoration: underline;
+}
+
+.preview-paragraph {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+
+
+
+
+
+
+
 /* Navigation Bar Styles */
 .navbar {
     display: flex;
@@ -246,6 +275,14 @@ footer {
         color: black;
     }
 
+
+
+
+
+
+
+
+/*Comment System*/
 .comments-grid{
     border:none;
     width: 60%;
