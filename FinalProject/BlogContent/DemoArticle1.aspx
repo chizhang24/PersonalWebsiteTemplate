@@ -6,14 +6,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>Random Title</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis potenti blandit, odio posuere sapien molestie integer scelerisque nec suscipit elementum.Fringilla praesent molestie phasellus neque platea ac pellentesque, est dis accumsan fames pretium bibendum sem, quis nascetur semper sociosqu himenaeos malesuada. </p>
-     <p> Ante volutpat semper praesent neque nulla dictum aliquam diam gravida congue habitasse, fusce elementum pulvinar eleifend fringilla faucibus senectus porttitor porta.</p>
+    <div class="cv-container">
+    <h1 style="font-size: 24px; color:#007BFF;">Chapitre Premier</h1>
+    <p>Après avoir quitté Châteauroux, elle habita, rue du Roi de Sicile, un petit appartement, dans lequel, si j’en juge par la quantité et la dimension des meubles qui garnissent aujourd’hui ma maison, il y avait encore de quoi se retourner. Elle prit, pour faire l’éducation de son fils, un jeune homme que j’ai connu vieux, et qui a été aussi mon précepteur. Ce personnage, à la fois sérieux et comique, a tenu trop de place dans notre vie de famille et dans mes souvenirs, pour que je n’en fasse pas une mention particulière. </p>
+     <p> Il s’appelait François Deschartres, et comme il avait porté le petit collet en qualité de professeur au collége du cardinal Lemoine, il entra chez ma grand’mère avec le costume et le titre d’abbé. Mais, à la révolution, qui vint bientôt chicaner sur toute espèce de titres, l’abbé Deschartres devint prudemment le citoyen Deschartres. Sous l’empire, il fut M. Deschartres, maire du village de Nohant ; sous la restauration, il eût volontiers repris son titre d’abbé, car il n’avait pas varié dans son amour pour les formes du passé. Mais il n’avait jamais été dans les ordres, et d’ailleurs il ne put se délivrer d’un sobriquet que j’avais attaché à son omnicompétence et à son air important : on ne l’appelait plus dès lors que le grand homme.</p>
 
-    <p>Imperdiet est fermentum taciti eros penatibus et facilisis, neque tempus primis malesuada posuere euismod mollis nisl, mattis cursus sociosqu litora ante nulla. Habitasse lobortis quam tristique libero feugiat litora sociosqu pellentesque, ad nibh praesent hac leo lacus mattis, ullamcorper urna pharetra volutpat imperdiet nostra per sed, pretium suscipit augue scelerisque nunc phasellus. Et magna aptent primis cursus dignissim luctus cum aliquam eros, dui cubilia rutrum montes vestibulum vulputate neque posuere quam interdum, tempus turpis eget eu facilisis porttitor condimentum lectus.</p>
+    <p>Il avait été joli garçon, il l’était encore lorsque ma grand’mère se l’attacha : propret, bien rasé, l’œil vif, et le mollet saillant. Enfin, il avait une très bonne tournure de gouverneur. Mais je suis sûre que jamais personne, dans son meilleur temps, n’avait pu le regarder sans rire, tant le mot cuistre était clairement écrit dans toutes les lignes de son visage et dans tous les mouvemens de sa personne.</p>
 
-    <uc:CommentSystem runat="server" ID="commentSystem" />
+     <p>
+         Pour être complet, il eût dû être ignare, gourmand et lâche. Mais loin de là, il était fort savant, très sobre et follement courageux. Il avait toutes les grandes qualités de l’ame jointes à un caractère insupportable et à un contentement de lui-même qui allait jusqu’au délire. Il avait les idées les plus absolues, les manières les plus rudes, le langage le plus outrecuidant. Mais quel dévoûment, quel zèle, quelle ame généreuse et sensible ! pauvre grand homme ! comme je t’ai pardonné tes persécutions ! Pardonne-moi de même, dans l’autre vie, tous les mauvais tours que je t’ai joués, toutes les détestables espiègleries par lesquelles je me suis vengée de ton étouffant despotisme : tu m’as appris fort peu de choses, mais il en est une que je te dois et qui m’a bien servi : c’est de réussir, malgré les bouillonnemens de mon indépendance naturelle, à supporter longtemps les caractères les moins supportables et les idées les plus extravagantes.
+     </p>
 
+
+    </div>
+    
+    <div class="cv-container"><uc:CommentSystem runat="server" ID="commentSystem" />
+    </div>
+    
 
 
     
