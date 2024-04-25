@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Blog.aspx.cs" Inherits="FinalProject.Blog" %>
+﻿<%@ Page Title="Casanova - Blog" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Blog.aspx.cs" Inherits="FinalProject.Blog" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <%--<h2>Blog Comments</h2>
     <asp:TextBox ID="txtComment" TextMode="MultiLine" Columns="50" Rows="4" runat="server"></asp:TextBox><br />

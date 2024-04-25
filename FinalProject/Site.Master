@@ -21,7 +21,7 @@ Part of: A590 WEB Final Project
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
 
-    <title>Personal Website</title>
+    <title>Giacomo Casanova</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -34,23 +34,31 @@ Part of: A590 WEB Final Project
             <asp:HyperLink runat="server" NavigateUrl="~/CV.aspx" Text="CV" />
             
             <asp:HyperLink runat="server" NavigateUrl="~/Publications.aspx" Text="Publications" />
-            <asp:HyperLink runat="server" NavigateUrl="~/Blog.aspx" Text="Research Blog" />
+            <asp:HyperLink runat="server" NavigateUrl="~/Blog.aspx" Text="Blog" />
              <asp:HyperLink runat="server" NavigateUrl="~/login.aspx" Text="Login/Register" />
             <div>
                 <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" CssClass="link-button" />
 
             </div>
 
-            <div>
-                Logged in as :<asp:Literal ID="ltUserName" runat="server" />
+            <div style="padding:40px;">
+                Logged in as :<br /><asp:Literal ID="ltUserName" runat="server" />
             
             </div>
 
         </div>
+        
+
         <section>
+        
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+              
             </asp:ContentPlaceHolder>
+     
         </section>
+        
+        
+        
         <footer>
             <p class="footer-text">© 2024 Your Name. All rights reserved.</p>
         </footer>

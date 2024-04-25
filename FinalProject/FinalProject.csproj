@@ -133,10 +133,13 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CV.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Images\casanova.jpg" />
     <Content Include="login.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Publications.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -231,6 +234,13 @@
     <Compile Include="BlogContent\DemoArticle2.aspx.designer.cs">
       <DependentUpon>DemoArticle2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="CV.aspx.cs">
+      <DependentUpon>CV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CV.aspx.designer.cs">
+      <DependentUpon>CV.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -249,6 +259,13 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publications.aspx.cs">
+      <DependentUpon>Publications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Publications.aspx.designer.cs">
+      <DependentUpon>Publications.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

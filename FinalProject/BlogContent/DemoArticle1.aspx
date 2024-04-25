@@ -6,6 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <h1>Random Title</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit iaculis potenti blandit, odio posuere sapien molestie integer scelerisque nec suscipit elementum.Fringilla praesent molestie phasellus neque platea ac pellentesque, est dis accumsan fames pretium bibendum sem, quis nascetur semper sociosqu himenaeos malesuada. </p>
      <p> Ante volutpat semper praesent neque nulla dictum aliquam diam gravida congue habitasse, fusce elementum pulvinar eleifend fringilla faucibus senectus porttitor porta.</p>
 
