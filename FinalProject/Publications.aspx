@@ -1,4 +1,13 @@
 ﻿<%@ Page Title="Casanova - Publications" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Publications.aspx.cs" Inherits="FinalProject.Publications" %>
+<%-- Publications.aspx
+    Description: This page displays the Publications of Giacomo Girolamo Casanova, what makes it visually pleasing is the use of fonts of Lucida Sans and the color scheme of blue and grey. 
+Created by: Chi Zhang
+Date Created: 4/17/2024
+Last Modified by: Chi Zhang
+Date Last Modified: 4/26/2024
+Part of: A590 WEB Final Project
+    --%>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

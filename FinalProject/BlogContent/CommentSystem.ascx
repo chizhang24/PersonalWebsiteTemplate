@@ -1,6 +1,15 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CommentSystem.ascx.cs" Inherits="FinalProject.BlogContent.CommentSystem" %>
 
 <link rel="Stylesheet" type="text/css" href="../Style.css" />
+<%-- CommentSystem.aspx
+This page is a user control that displays comments for a blog post and allows users to post comments. And it is also controlled by the '/Style.css' file.
+Created by: Chi Zhang
+Date Created: 4/17/2024
+Last Modified by: Chi Zhang
+Date Last Modified: 4/26/2024
+Part of: A590 WEB Final Project
+    --%>
+
 
 
 

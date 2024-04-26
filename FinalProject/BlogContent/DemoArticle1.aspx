@@ -1,5 +1,15 @@
 ﻿<%@ Page Title="Demo Article 1" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DemoArticle1.aspx.cs" Inherits="FinalProject.BlogContent.DemoArticle1" %>
 <%@ Register Src="~/BlogContent/CommentSystem.ascx" TagPrefix="uc" TagName="CommentSystem" %>
+<%-- DemoArticle1.aspx
+This file is the first demo article page. It is used to show the content of the article and the comment system.For every article, there is a comment system at the bottom of the article content, which is controlled by <uc:CommentSystem runat="server" ID="commentSystem" />, and the comment system is implemented in CommentSystem.ascx file.
+
+Created by: Chi Zhang
+Date Created: 4/17/2024
+Last Modified by: Chi Zhang
+Date Last Modified: 4/26/2024
+Part of: A590 WEB Final Project
+    --%>
+
 
 
 

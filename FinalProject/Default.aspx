@@ -1,4 +1,15 @@
 ﻿<%@ Page Title="Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="FinalProject.Default1" %>
+
+<%-- Default.aspx
+This is the home page of the website, providing a brief biography of Giacomo Casanova and an image of him. The image is stored in '/Images' folder.
+Created by: Chi Zhang
+Date Created: 4/17/2024
+Last Modified by: Chi Zhang
+Date Last Modified: 4/26/2024
+Part of: A590 WEB Final Project
+    --%>
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">

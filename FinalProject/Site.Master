@@ -1,11 +1,12 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FinalProject.SiteMaster" %>
 
 <%-- Site.Master
+This is the master page for the website. It contains the navigation bar and the footer. The navigation bar contains links to the Home, CV, Publications, Blog review, and Login/Register pages. The navigation bar also contains a logout button and a display of the current user's name. The footer contains the copyright information.
 
 Created by: Chi Zhang
-Date Created: 4/15/2024
+Date Created: 4/17/2024
 Last Modified by: Chi Zhang
-Date Last Modified: 4/17/2024
+Date Last Modified: 4/26/2024
 Part of: A590 WEB Final Project
     --%>
 

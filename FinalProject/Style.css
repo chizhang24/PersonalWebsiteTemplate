@@ -1,4 +1,15 @@
-﻿html, body{
+﻿/*
+Style.css
+This file contains the CSS for the website. It includes the styling for the header, footer, navigation bar, and the main content of the website. It also includes the styling for the comment system, login and register page, and the blog page.
+Created by: Chi Zhang
+Date Created: 4/17/2024
+Last Modified by: Chi Zhang
+Date Last Modified: 4/26/2024
+Part of: A590 WEB Final Project
+*/
+
+
+html, body{
     height:100%;
     width:100%;
     margin:0;
