@@ -11,7 +11,7 @@ namespace FinalProject
 {
 
 
-    public partial class Register
+    public partial class CV
     {
     }
 }

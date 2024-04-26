@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.IO;
+using HtmlAgilityPack;
 
 namespace FinalProject
 {
@@ -13,40 +15,65 @@ namespace FinalProject
         {
             if (!IsPostBack)
             {
-                LoadComments();
+                LoadBlogPreviews();
+                /*LoadComments();*/
             }
         }
 
-        protected void btnPostComment_Click(object sender, EventArgs e)
+
+        private string ExtractTitle(string filePath)
         {
-            if (Session["UserID"] != null)
+            HtmlDocument doc = new HtmlDocument();
+            doc.Load(filePath);
+            var titleNode = doc.DocumentNode.SelectSingleNode("//h1");
+            return titleNode != null ? titleNode.InnerText : "No title available";
+        }
+
+
+
+
+        private string[] ExtractPreview(string filePath)
+        {
+            HtmlDocument doc = new HtmlDocument();
+            doc.Load(filePath);
+            var paragraphs = doc.DocumentNode.SelectNodes("//p");
+            if (paragraphs == null) return new string[] {"No content available"};
+            return paragraphs.Take(2).Select(p => p.InnerText).ToArray();
+        }
+
+
+
+        private void LoadBlogPreviews()
+        {
+            var blogFiles = new string[] { "DemoArticle1.aspx", "DemoArticle2.aspx" };
+            var basePath = Server.MapPath("~/BlogContent/");
+
+            ContentPlaceHolder cph = (ContentPlaceHolder)Master.FindControl("MainContent");
+
+            foreach (var file in blogFiles)
             {
-                using (var db = new BlogContext())
+                string filePath = Path.Combine(basePath, file);
+                if (File.Exists(filePath))
                 {
-                    var comment = new Comment
+                    string title = ExtractTitle(filePath);
+                    string[] contentLines = ExtractPreview(filePath);
+                    string previewContent = string.Join("<br>", contentLines);
+
+
+                    LiteralControl link = new LiteralControl($"<div class='cv-container'><h2 style='font-size:24px; margin-bottem:10px;'><a href='/BlogContent/{file}' class='article-link'>{title}</a></h2>");
+                    LiteralControl preview = new LiteralControl($"<p class='preview-paragraph'>{previewContent}...<a href='/BlogContent/{file}' class='read-more-link'>Read more</a></p> </div>");
+
+                    if (cph != null)
                     {
-                        Content = txtComment.Text.Trim(),
-                        UserId = (int)Session["UserID"]
-                    };
-                    db.Comments.Add(comment);
-                    db.SaveChanges();
-                    LoadComments();
+                        cph.Controls.Add(link);
+                        cph.Controls.Add(preview);
+                    }
+
                 }
-            }
-            else
-            {
-                Response.Redirect("login.aspx");
+
             }
         }
 
-        private void LoadComments()
-        {
-            using (var db = new BlogContext())
-            {
-                var comments = db.Comments.Include("User").Select(c => new { c.Content, Username = c.User.Username }).ToList();
-                gvComments.DataSource = comments;
-                gvComments.DataBind();
-            }
-        }
+
     }
 }

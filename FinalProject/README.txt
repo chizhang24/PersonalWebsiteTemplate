@@ -1,5 +1,3 @@
-# FinalProject
-
 This is a professional personal website template. The users can substitute their own content and images in this template. 
 
 ## Master Page

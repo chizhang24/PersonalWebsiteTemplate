@@ -1,11 +1,12 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="FinalProject.SiteMaster" %>
 
 <%-- Site.Master
+This is the master page for the website. It contains the navigation bar and the footer. The navigation bar contains links to the Home, CV, Publications, Blog review, and Login/Register pages. The navigation bar also contains a logout button and a display of the current user's name. The footer contains the copyright information.
 
 Created by: Chi Zhang
-Date Created: 4/15/2024
+Date Created: 4/17/2024
 Last Modified by: Chi Zhang
-Date Last Modified: 4/17/2024
+Date Last Modified: 4/26/2024
 Part of: A590 WEB Final Project
     --%>
 
@@ -17,30 +18,50 @@ Part of: A590 WEB Final Project
 <head runat="server">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+    <title>Giacomo Casanova</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
 </head>
 <body>
     <form runat="server">
         <div class="navbar">
             <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx" Text="Home" />
             <asp:HyperLink runat="server" NavigateUrl="~/CV.aspx" Text="CV" />
-            <asp:HyperLink runat="server" NavigateUrl="~/Teaching.aspx" Text="Teaching" />
+            
             <asp:HyperLink runat="server" NavigateUrl="~/Publications.aspx" Text="Publications" />
-            <asp:HyperLink runat="server" NavigateUrl="~/Blog.aspx" Text="Research Blog" />
+            <asp:HyperLink runat="server" NavigateUrl="~/Blog.aspx" Text="Blog" />
              <asp:HyperLink runat="server" NavigateUrl="~/login.aspx" Text="Login/Register" />
+            <div>
+                <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" CssClass="link-button" />
 
-            <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="RedirectToLoginPage" LogoutPageUrl="~/login.aspx" LogoutText="Logout" Font-Overline="False" LoginText="Logout" />
+            </div>
+
+            <div style="padding:40px;">
+                Logged in as :<br /><asp:Literal ID="ltUserName" runat="server" />
+            
+            </div>
 
         </div>
+        
+
         <section>
+        
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+              
             </asp:ContentPlaceHolder>
+     
         </section>
+        
+        
+        
         <footer>
-            <p class="footer-text">© 2024 Your Name. All rights reserved.</p>
+            <p class="footer-text">© 2024 Giacomo Casanova. All rights reserved.</p>
         </footer>
     </form>
 </body>

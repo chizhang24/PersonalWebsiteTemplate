@@ -7,47 +7,38 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FinalProject
+namespace FinalProject.BlogContent
 {
 
 
-    public partial class SiteMaster
+    public partial class CommentSystem
     {
 
         /// <summary>
-        /// head control.
+        /// gvComments control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.GridView gvComments;
 
         /// <summary>
-        /// btnLogout control.
+        /// txtComment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogout;
+        protected global::System.Web.UI.WebControls.TextBox txtComment;
 
         /// <summary>
-        /// ltUserName control.
+        /// btnPostComment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltUserName;
-
-        /// <summary>
-        /// MainContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button btnPostComment;
     }
 }
