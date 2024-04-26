@@ -189,9 +189,9 @@ footer {
     padding: 20px;
     border-radius: 8px;
     /*    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);    
-*/
+*//*
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    overflow:auto;
+    overflow:auto;*/
 }
 
 .cv-description {
@@ -347,4 +347,56 @@ footer {
 
 .post-comment-btn:hover {
     background-color: #333;
+}
+
+
+
+/*Login and Register Page*/
+
+.login-box {
+    width: 200px;
+    height: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+.login-btn {
+    background-color: #f4f4f4;
+    margin:0;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+    height: 40px;
+}
+
+.login-btn:hover {
+    background-color: #333;
+}
+
+
+
+table, td{
+    border:none;
+}
+
+
+table {
+    border-collapse:collapse;
+    width: 300px;
+}
+
+
+td{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+td[colspan="2"]{
+    width:200px;
 }

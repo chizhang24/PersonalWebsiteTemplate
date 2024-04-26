@@ -60,8 +60,8 @@ namespace FinalProject
                     string previewContent = string.Join("<br>", contentLines);
 
 
-                    LiteralControl link = new LiteralControl($"<h2 style='font-size:24px; margin-bottem:10px;'><a href='/BlogContent/{file}' class='article-link'>{title}</a></h2>");
-                    LiteralControl preview = new LiteralControl($"<p class='preview-paragraph'>{previewContent}...<a href='/BlogContent/{file}' class='read-more-link'>Read more</a></p>");
+                    LiteralControl link = new LiteralControl($"<div class='cv-container'><h2 style='font-size:24px; margin-bottem:10px;'><a href='/BlogContent/{file}' class='article-link'>{title}</a></h2>");
+                    LiteralControl preview = new LiteralControl($"<p class='preview-paragraph'>{previewContent}...<a href='/BlogContent/{file}' class='read-more-link'>Read more</a></p> </div>");
 
                     if (cph != null)
                     {

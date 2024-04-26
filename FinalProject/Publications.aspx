@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-        <div class="cv-container">
+        <div class="cv-container" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';">
         <header>
             <h1 style="font-size: 24px; color:#007BFF;">Giacomo Casanova's Publications</h1>
         </header>

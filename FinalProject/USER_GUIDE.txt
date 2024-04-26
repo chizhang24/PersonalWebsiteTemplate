@@ -1,0 +1,12 @@
+This is a template for a professional personal webpage, where you can host your CV, publications, blog.
+
+1. Homepage: you can put a short bio of you and substitute the photo of Casanova with your own photo.
+2. CV: you can substitute Casanova's CV with your own CV.
+
+3. Publications: you can substitute Casanova's publications with your own publications.
+
+4. Blog: you can write your own blog posts. But be sure to put the blog articles in the folder '/BlogContent'. After putting a blog article in this folder, you should also go to the file '/Blog.aspx.cs' and add a new entry in the list of blog articles, which is in line 48 and named 'blogFiles'.
+
+5. Comment system: you can post comment in blog articles only if you are a registered user and logged in. You can register and login in the 'Login' page.
+
+6. Login/Register: the login/register system requires unique usernames and passwords. And there is also a password strength requirement: the password should have at least 8 characters, at least one uppercase letter, one lowercase letter, one number and one special character.

@@ -6,7 +6,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="cv-container">
+    <div class="cv-container", style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';">
     <h1 style="font-size: 24px; color:#007BFF;">Chapitre Premier</h1>
     <p>Après avoir quitté Châteauroux, elle habita, rue du Roi de Sicile, un petit appartement, dans lequel, si j’en juge par la quantité et la dimension des meubles qui garnissent aujourd’hui ma maison, il y avait encore de quoi se retourner. Elle prit, pour faire l’éducation de son fils, un jeune homme que j’ai connu vieux, et qui a été aussi mon précepteur. Ce personnage, à la fois sérieux et comique, a tenu trop de place dans notre vie de famille et dans mes souvenirs, pour que je n’en fasse pas une mention particulière. </p>
      <p> Il s’appelait François Deschartres, et comme il avait porté le petit collet en qualité de professeur au collége du cardinal Lemoine, il entra chez ma grand’mère avec le costume et le titre d’abbé. Mais, à la révolution, qui vint bientôt chicaner sur toute espèce de titres, l’abbé Deschartres devint prudemment le citoyen Deschartres. Sous l’empire, il fut M. Deschartres, maire du village de Nohant ; sous la restauration, il eût volontiers repris son titre d’abbé, car il n’avait pas varié dans son amour pour les formes du passé. Mais il n’avait jamais été dans les ordres, et d’ailleurs il ne put se délivrer d’un sobriquet que j’avais attaché à son omnicompétence et à son air important : on ne l’appelait plus dès lors que le grand homme.</p>

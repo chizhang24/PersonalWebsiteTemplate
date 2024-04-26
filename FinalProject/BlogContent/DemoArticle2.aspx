@@ -8,7 +8,7 @@
 
 
 
-    <div class="cv-container">
+    <div class="cv-container" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';">
 <h1 style="font-size: 24px; color:#007BFF;">The Duel</h1>
 <p>We had driven about half an hour when the carriage stopped at the door of a large garden. We got down and, following the postoli, reached a green arbour which, by the way, was not at all green on that 5th of March. In it was a stone table on which the footman placed two pistols, a foot and half long, with a powder flask and scales. He weighed the powder, loaded them equally, and laid them down crosswise on the table.</p>
 
